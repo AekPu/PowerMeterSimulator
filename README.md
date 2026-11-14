@@ -20,6 +20,8 @@
   `PM-2002` RTU/Serial, `PM-3001` backend และ `PM-4001` การอ่าน Modbus
 - ปุ่ม “ส่งรายงานปัญหา” เปิดอีเมลฉบับร่างถึง `horenso309@gmail.com` โดยผู้ใช้ตรวจและกดส่งเอง
 - ปุ่ม “ขอเพิ่มรุ่นมิเตอร์” ให้กรอกยี่ห้อและรุ่น แล้วเปิดอีเมลฉบับร่างถึงอีเมลเดียวกัน
+- แถบ “โปรไฟล์การเชื่อมต่อ” ใช้บันทึก โหลด และลบค่ามิเตอร์, TCP/RTU, Host/Port, Unit ID,
+  COM port, Baud rate และ Data format; เก็บไฟล์ไว้ที่ `%LOCALAPPDATA%\PowerMeterSimulator\connection_profiles.json`
 - Backend ถูกติดตั้งในโฟลเดอร์ข้าง GUI; อย่าย้าย executable ออกจากโฟลเดอร์ของมัน
 
 ## แนวทางสำหรับ AI ที่แก้ไขโปรเจกต์
@@ -33,6 +35,6 @@
 
 ## รุ่นปัจจุบัน
 
-รุ่น `1.0.4` จำกัด Pymodbus ไว้ที่ `>=3.8,<3.10` เพราะ backend ใช้ datastore API
+รุ่น `1.0.5` จำกัด Pymodbus ไว้ที่ `>=3.8,<3.10` เพราะ backend ใช้ datastore API
 ที่เปลี่ยนใน Pymodbus 3.10 ขึ้นไป ป้องกัน backend ปิดตัวตอนเริ่มระบบ
-ดูรายละเอียดใน [`RELEASE_NOTES-1.0.4.md`](./RELEASE_NOTES-1.0.4.md)
+ดูรายละเอียดใน [`RELEASE_NOTES-1.0.5.md`](./RELEASE_NOTES-1.0.5.md)
