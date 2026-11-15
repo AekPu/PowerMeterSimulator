@@ -23,6 +23,7 @@
 - แถบ “โปรไฟล์การเชื่อมต่อ” ใช้บันทึก โหลด และลบค่ามิเตอร์, TCP/RTU, Host/Port, Unit ID,
   COM port, Baud rate และ Data format; เก็บไฟล์ไว้ที่ `%LOCALAPPDATA%\PowerMeterSimulator\connection_profiles.json`
 - Backend ถูกติดตั้งในโฟลเดอร์ข้าง GUI; อย่าย้าย executable ออกจากโฟลเดอร์ของมัน
+- Backend ตั้งค่า stdout/stderr เป็น UTF-8 ก่อนเริ่มฉาก เพื่อให้ข้อความภาษาไทยไม่ทำให้โปรเซสหยุดบน Windows ที่ใช้ code page อื่น
 
 ## แนวทางสำหรับ AI ที่แก้ไขโปรเจกต์
 
@@ -35,6 +36,6 @@
 
 ## รุ่นปัจจุบัน
 
-รุ่น `1.0.5` จำกัด Pymodbus ไว้ที่ `>=3.8,<3.10` เพราะ backend ใช้ datastore API
+รุ่น `1.0.6` จำกัด Pymodbus ไว้ที่ `>=3.8,<3.10` เพราะ backend ใช้ datastore API
 ที่เปลี่ยนใน Pymodbus 3.10 ขึ้นไป ป้องกัน backend ปิดตัวตอนเริ่มระบบ
-ดูรายละเอียดใน [`RELEASE_NOTES-1.0.5.md`](./RELEASE_NOTES-1.0.5.md)
+ดูรายละเอียดใน [`RELEASE_NOTES-1.0.6.md`](./RELEASE_NOTES-1.0.6.md)
